@@ -7,6 +7,7 @@
 mod abilities;
 mod auto;
 mod cards;
+mod companions;
 mod data;
 mod enemies;
 mod fill;
@@ -72,8 +73,11 @@ impl Plugin for SurvivorsPlugin {
                 Update,
                 (
                     enemies::spawn_enemies,
+                    companions::spawn_party,
+                    companions::follow_leader,
                     enemies::move_enemies,
                     abilities::cast_abilities,
+                    companions::auto_attack,
                     abilities::tick_areas,
                     abilities::apply_hits,
                     enemies::tick_marks,

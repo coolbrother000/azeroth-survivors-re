@@ -19,7 +19,9 @@ from-scratch WoW 1.12.1 client engine (Rust + [Bevy](https://bevy.org)).**
 
 Pick a class and a battleground, then survive: WASD to move, your abilities cast themselves,
 enemies swarm in waves, you level up and pick upgrades, and a boss shows up every couple of
-minutes. **No server, no login, no account** — fully offline and self-contained.
+minutes. Four AI companions of distinct classes follow the selected hero and use their signature
+spells automatically; the player still controls one hero and chooses that hero's level-up cards.
+**No server, no login, no account** — fully offline and self-contained.
 
 <table>
   <tr>
@@ -43,6 +45,10 @@ minutes. **No server, no login, no account** — fully offline and self-containe
   `Damage 20 » 26` or `Targets 2 » 3`.
 - **A class movement spell on F** from level 5, aimed at the cursor: Blink, Charge, Sprint, Dash,
   Fade, Ghost Wolf, Aspect of the Cheetah, Blessing of Freedom, Howl of Terror.
+- **Four AI companions** join every run, follow the controlled hero in a loose formation and
+  automatically cast their class's starting attack at nearby enemies. Companion damage grows with
+  the hero's level; companions use their own attack cooldowns, while experience and level-up choices
+  remain with the controlled hero.
 - **A camera you can free:** locked top-down by default with the hero facing the cursor. **C**
   unlocks it to swing and tilt, and the wheel zooms from over the shoulder out to 70 yards.
 - A light sharpen-and-colour pass over the picture (**G** toggles it).
